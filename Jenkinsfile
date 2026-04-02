@@ -6,9 +6,9 @@ pipeline{
           git url:'https://github.com/asdfbytes/Dockerfile.git',branch: 'main'
         }
       }
-      stage('PBuild Image'){
+      stage('Build Image'){
         steps{
-          bat 'docker build -t mywebsite.'
+          bat 'docker build -t mywebsite .'
         }
       }
       stage('stop old Containers'){
