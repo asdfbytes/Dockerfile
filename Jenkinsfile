@@ -18,7 +18,7 @@ pipeline{
         }
       }
       stage ('Run Image - Container'){
-        Steps{
+        steps{
           bat 'docker run -d -p 7000:80 --name mycont mywebsite'
 
                             }
