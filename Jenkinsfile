@@ -3,7 +3,7 @@ pipeline{
     stages{
       stage('Checkout'){
         steps{
-          git 'https://github.com/asdfbytes/Dockerfile.git'
+          git 'https://github.com/asdfbytes/Dockerfile.git, branch:main'
         }
       }
       stage('PBuild Image'){
