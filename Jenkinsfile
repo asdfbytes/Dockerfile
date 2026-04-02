@@ -13,7 +13,7 @@ pipeline{
       }
       stage('stop old Containers'){
         steps{
-          bat 'docker stop myacont || exit 0'
+          bat 'docker stop mycont || exit 0'
           bat 'docker rm mycont || exit 0'
         }
       }
